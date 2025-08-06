@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".fragment.writelock.LockFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/btns"
+        android:orientation="vertical">
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="50dp"
+            android:hint="@string/hint_selectd_tag_epc">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/edtv_tag_epc"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:digits="0123456789abcdefABCDEF" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:text="@string/lock_bank" />
+
+            <androidx.appcompat.widget.AppCompatSpinner
+                android:id="@+id/spinner_lock_bank"
+                style="@style/common_spinner"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:entries="@array/lock_bank_arr" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:text="@string/lock_type" />
+
+            <androidx.appcompat.widget.AppCompatSpinner
+                android:id="@+id/spinner_lock_type"
+                style="@style/common_spinner"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:entries="@array/lock_type_arr" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:hint="@string/access_password">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/edtv_pwd"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:digits="0123456789abcdefABCDEF"
+                    android:maxLength="8" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <androidx.appcompat.widget.AppCompatCheckBox
+                android:id="@+id/chkbox_pwd"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical" />
+        </LinearLayout>
+        <TextView
+            android:gravity="center"
+            android:text="@string/introduction_lock_text"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/btns"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true">
+
+        <Button
+            android:id="@+id/btn_lock"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/btn_tx_lock" />
+
+        <Button
+            android:id="@+id/btn_kill"
+            android:visibility="gone"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/btn_tx_kill" />
+    </LinearLayout>
+</RelativeLayout>

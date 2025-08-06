@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+    <ListPreference
+        android:key="read_power_ante1"
+        android:title="@string/read_power_ante1_title"
+        android:entries="@array/power_list"
+        android:entryValues="@array/power_list"
+        />
+    <ListPreference
+        android:key="write_power_ante1"
+        android:title="@string/write_power_ante1_title"
+        android:entries="@array/power_list"
+        android:entryValues="@array/power_list"
+        />
+</PreferenceScreen>

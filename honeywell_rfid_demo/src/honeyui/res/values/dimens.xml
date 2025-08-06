@@ -1,0 +1,12 @@
+<resources>
+    <dimen name="divider_height">1px</dimen>
+    <dimen name="bt_control_item_paddingLeft">16dp</dimen>
+    <dimen name="bt_control_item_paddingRight">0dp</dimen>
+    <dimen name="common_padding_large">24dp</dimen>
+    <dimen name="common_margin_large">24dp</dimen>
+    <dimen name="common_padding_medium">16dp</dimen>
+    <dimen name="common_margin_medium">16dp</dimen>
+    <dimen name="common_padding_small">12dp</dimen>
+    <dimen name="common_margin_small">12dp</dimen>
+    <dimen name="common_info_item_width">58dp</dimen>
+</resources>

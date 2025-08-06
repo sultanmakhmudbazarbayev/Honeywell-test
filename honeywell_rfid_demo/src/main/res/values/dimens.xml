@@ -1,0 +1,18 @@
+<resources>
+    <dimen name="divider_height">1dp</dimen>
+
+    <dimen name="gridview_horizontalSpacing">2dp</dimen>
+    <dimen name="gridview_verticalSpacing">@dimen/gridview_horizontalSpacing</dimen>
+
+    <dimen name="gridview_item_height">195.5dp</dimen>
+    <dimen name="gridview_item_width">180dp</dimen>
+
+    <dimen name="bt_control_item_height">40dp</dimen>
+    <dimen name="bt_control_item_paddingLeft">15dp</dimen>
+    <dimen name="bt_control_item_paddingRight">12dp</dimen>
+
+    <dimen name="listview_item_paddingStart">@dimen/bt_control_item_paddingLeft</dimen>
+    <dimen name="listview_item_paddingEnd">@dimen/bt_control_item_paddingLeft</dimen>
+
+    <dimen name="settings_region_freq_item">@dimen/bt_control_item_height</dimen>
+</resources>

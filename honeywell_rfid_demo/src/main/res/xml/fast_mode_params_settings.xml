@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+    <ListPreference
+        android:defaultValue="0"
+        android:entries="@array/pause_percentage_entries"
+        android:entryValues="@array/pause_percentage_entryValues"
+        android:key="pause_percentage"
+        android:title="@string/pause_percentage_title" />
+    <com.honeywell.bccrfid.views.MyPreference
+        android:key="fast_mode_settings"
+        android:layout="@layout/fast_mode_settings"
+        android:selectable="false" />
+</PreferenceScreen>

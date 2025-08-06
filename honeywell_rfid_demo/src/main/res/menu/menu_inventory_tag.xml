@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/reader_read_item"
+        android:icon="@drawable/reader_inventory_fit"
+        android:title="@string/inventory_tag_text"
+        app:showAsAction="always"/>
+
+    <item
+        android:id="@+id/reader_writelock_item"
+        android:icon="@drawable/reader_writelock_fit"
+        android:title="@string/write_lock_tag_text"
+        app:showAsAction="always"/>
+    <item
+        android:id="@+id/reader_locate_item"
+        android:icon="@drawable/reader_locate_fit"
+        android:title="@string/locate_tag_text"
+        app:showAsAction="always"/>
+    <item
+        android:id="@+id/reader_setting_item"
+        android:icon="@drawable/reader_setting_fit"
+        android:title="@string/settings_text"
+        app:showAsAction="always"/>
+</menu>

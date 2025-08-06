@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <include
+        android:id="@+id/toolbar_layout"
+        layout="@layout/toolbar"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/access_read"
+        android:layout_below="@+id/toolbar_layout"
+        android:orientation="vertical">
+
+        <include
+            layout="@layout/horizontal_divider"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/divider_height"
+            android:layout_marginTop="16dp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            android:background="@android:color/white">
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:paddingLeft="@dimen/bt_control_item_paddingLeft"
+                android:paddingRight="@dimen/bt_control_item_paddingRight">
+
+                <TextView
+                    android:id="@+id/bluetoothstate"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_weight="1"
+                    android:text="@string/tv_bluetooth"
+                    android:textColor="#000000"
+                    android:textSize="14sp" />
+
+                <Switch
+                    android:id="@+id/bt_switch"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:textOff="@string/bt_text_off"
+                    android:textOn="@string/bt_text_on" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:paddingLeft="@dimen/bt_control_item_paddingLeft"
+                android:paddingRight="@dimen/bt_control_item_paddingRight"
+                android:visibility="visible">
+
+                <TextView
+                    android:id="@+id/auto_connect_state"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_weight="1"
+                    android:text="@string/tv_auto_connect"
+                    android:textColor="#000000"
+                    android:textSize="14sp" />
+
+                <Switch
+                    android:id="@+id/auto_connect_switch"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:textOff="@string/bt_text_off"
+                    android:textOn="@string/bt_text_on" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <include layout="@layout/horizontal_divider" />
+
+        <LinearLayout
+            android:id="@+id/group"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="32dp"
+                android:layout_marginBottom="10dp"
+                android:paddingLeft="16dp"
+                android:paddingRight="16dp">
+
+                <TextView
+                    android:id="@+id/list_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:text="@string/list_tv_text"
+                    android:textColor="#939393"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/btn_search"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:lines="1"
+                    android:text="@string/btn_search_text"
+                    android:textColor="#1274B7"
+                    android:textSize="16sp"
+                    android:textStyle="bold" />
+            </RelativeLayout>
+
+            <include layout="@layout/horizontal_divider" />
+
+            <ListView
+                android:id="@+id/bt_list"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:divider="@color/divider_color"
+                android:dividerHeight="@dimen/divider_height"></ListView>
+        </LinearLayout>
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/access_read"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:text="@string/access_read_text" />
+</RelativeLayout>

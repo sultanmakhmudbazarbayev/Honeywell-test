@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="76dp"
+    android:paddingStart="@dimen/common_padding_medium"
+    android:paddingTop="18dp"
+    android:paddingEnd="@dimen/common_padding_medium"
+    android:paddingBottom="@dimen/common_padding_medium">
+
+    <!--<TextView-->
+        <!--android:id="@android:id/text1"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:maxLines="1"-->
+        <!--android:textColor="#000000"-->
+        <!--android:textSize="14sp" />-->
+
+    <!--<TextView-->
+        <!--android:id="@+id/rssi"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_below="@android:id/text1"-->
+        <!--android:maxLines="1"-->
+        <!--android:textColor="#606060"-->
+        <!--android:textSize="14sp" />-->
+
+    <!--<TextView-->
+        <!--android:id="@+id/connect"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_alignParentEnd="true"-->
+        <!--android:maxLines="1"-->
+        <!--android:text="Connect"-->
+        <!--android:textColor="#606060"-->
+        <!--android:textSize="14sp" />-->
+
+    <!--<TextView-->
+        <!--android:id="@android:id/text2"-->
+        <!--android:visibility="gone"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_below="@+id/connect"-->
+        <!--android:layout_alignParentEnd="true"-->
+        <!--android:maxLines="1" />-->
+
+
+    <TextView
+        android:id="@android:id/text1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:maxLines="1"
+        android:textColor="#000000"
+        android:textSize="14sp" />
+    <TextView
+        android:id="@android:id/text2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@android:id/text1"
+        android:layout_alignParentStart="true"
+        android:maxLines="1" />
+    <TextView
+        android:id="@+id/rssi"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_centerVertical="true"
+        android:maxLines="1"
+        android:textColor="#606060"
+        android:textSize="14sp" />
+</RelativeLayout>

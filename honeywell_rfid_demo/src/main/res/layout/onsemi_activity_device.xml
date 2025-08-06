@@ -1,0 +1,295 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:nestedScrollingEnabled="true"
+    android:fitsSystemWindows="true">
+
+<LinearLayout
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="10dp"
+    tools:context=".BleDeviceActivity">
+
+    <androidx.cardview.widget.CardView
+        xmlns:card_view="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/card_view"
+        android:layout_gravity="center"
+        android:layout_width="match_parent"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="2dp"
+        android:layout_height="wrap_content"
+        android:background="#f7fcf9"
+        card_view:cardCornerRadius="8dp">
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                >
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+                    <TextView
+                        android:id="@+id/device_title_text_view"
+                        style="@style/DeviceActivity.Title"
+                        android:text="@string/title_activity_device"
+                        android:textSize="16sp"
+                        android:layout_marginTop="-5dp"
+                        android:textColor="#3CB371"/>
+                    <ImageView
+                        android:layout_width="70dp"
+                        android:layout_height="30dp"
+                        android:layout_alignParentEnd="true"
+                        android:src="@drawable/ic_devices"/>
+                </RelativeLayout>
+
+                <GridLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:layout_column="0"
+                        android:layout_row="0"
+                        android:text="@string/name"
+                        style="@style/DeviceActivity.Cell"
+                        />
+                    <TextView
+                        android:id="@+id/name_textview"
+                        android:layout_column="1"
+                        android:layout_row="0"
+                        style="@style/DeviceActivity.Cell"
+                        android:text=""
+                        />
+                    <TextView
+                        android:layout_column="0"
+                        android:layout_row="1"
+                        android:text="@string/address"
+                        style="@style/DeviceActivity.Cell"
+                        />
+                    <TextView
+                        android:id="@+id/address_textview"
+                        android:layout_column="1"
+                        android:layout_row="1"
+                        style="@style/DeviceActivity.Cell"
+                        android:text=""
+                        />
+                    <TextView
+                        android:id="@+id/state_title_text_view"
+                        android:layout_column="0"
+                        android:layout_row="2"
+                        android:text="@string/state"
+                        style="@style/DeviceActivity.Cell"
+                        />
+                    <TextView
+                        android:id="@+id/state_value_text_view"
+                        android:layout_column="1"
+                        android:layout_row="2"
+                        style="@style/DeviceActivity.Cell"
+                        android:text=""
+                        />
+                    <TextView
+                        android:layout_column="0"
+                        android:layout_row="3"
+                        android:text="@string/bootloader"
+                        style="@style/DeviceActivity.Cell"
+                        />
+                    <TextView
+                        android:id="@+id/bootlader_version_textview"
+                        android:layout_column="1"
+                        android:layout_row="3"
+                        style="@style/DeviceActivity.Cell"
+                        android:text=""
+                        />
+                    <TextView
+                        android:layout_column="0"
+                        android:layout_row="4"
+                        style="@style/DeviceActivity.Cell"
+                        android:text="@string/fota"
+                        />
+                    <TextView
+                        android:id="@+id/fota_version_textview"
+                        android:layout_column="1"
+                        android:layout_row="4"
+                        style="@style/DeviceActivity.Cell"
+                        android:text=""
+                        />
+                    <TextView
+                        android:layout_column="0"
+                        android:layout_row="5"
+                        style="@style/DeviceActivity.Cell"
+                        android:text="@string/app"
+                        />
+                    <TextView
+                        android:id="@+id/app_version_textview"
+                        android:layout_column="1"
+                        android:layout_row="5"
+                        style="@style/DeviceActivity.Cell"
+                        android:text=""
+                        />
+                </GridLayout>
+
+                <TextView
+                    android:id="@+id/connect_button"
+                    android:layout_width="wrap_content"
+                    android:layout_height="40dp"
+                    android:layout_gravity="end"
+                    android:layout_marginTop="5dp"
+                    android:text="@string/connect"
+                    android:gravity="center"
+                    android:textColor="#3CB371" />
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        xmlns:card_view="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/card_view_second"
+        android:layout_gravity="center"
+        android:layout_width="match_parent"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="5dp"
+        android:layout_height="wrap_content"
+        android:background="#fbfcfe"
+        card_view:cardCornerRadius="8dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+                    <TextView
+                        android:id="@+id/file_title_text_view"
+                        style="@style/DeviceActivity.Title"
+                        android:text="@string/file"
+                        android:layout_marginTop="-5dp"
+                        android:textSize="16sp"
+                        android:textColor="#4191e1"/>
+                    <ImageView
+                        android:layout_width="70dp"
+                        android:layout_height="30dp"
+                        android:layout_alignParentEnd="true"
+                        android:src="@drawable/ic_file"/>
+                </RelativeLayout>
+
+                <GridLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:layout_column="0"
+                        android:layout_row="0"
+                        style="@style/DeviceActivity.Cell"
+                        android:text="@string/name"
+                        />
+                    <TextView
+                        android:id="@+id/file_value_text_view"
+                        android:layout_column="1"
+                        android:layout_row="0"
+                        style="@style/DeviceActivity.Cell"
+                        android:text=""
+                        />
+                    <TextView
+                        android:layout_column="0"
+                        android:layout_row="1"
+                        style="@style/DeviceActivity.Cell"
+                        android:text="@string/fota"
+                        />
+                    <TextView
+                        android:id="@+id/fota_img_version_textview"
+                        android:layout_column="1"
+                        android:layout_row="1"
+                        style="@style/DeviceActivity.Cell"
+                        android:text=""
+                        />
+                    <TextView
+                        android:layout_column="0"
+                        android:layout_row="2"
+                        style="@style/DeviceActivity.Cell"
+                        android:text="@string/app"
+                        />
+                    <TextView
+                        android:id="@+id/app_img_version_textview"
+                        android:layout_column="1"
+                        android:layout_row="2"
+                        style="@style/DeviceActivity.Cell"
+                        android:text=""
+                        />
+                </GridLayout>
+                <TextView
+                    android:id="@+id/select_file_button"
+                    android:layout_width="wrap_content"
+                    android:layout_height="40dp"
+                    android:layout_gravity="end"
+                    android:layout_marginTop="5dp"
+                    android:text="@string/select_file"
+                    android:gravity="center"
+                    android:textColor="#4191e1" />
+
+        </LinearLayout>
+
+
+    </androidx.cardview.widget.CardView>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        />
+    <TextView
+        android:id="@+id/update_status_text_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAlignment="center"
+        android:textSize="10pt"
+        android:padding="10dp"
+        android:background="@android:color/transparent"
+        />
+    <RelativeLayout
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:padding="2dp">
+
+        <Button
+            android:id="@+id/update_button"
+            android:layout_centerInParent="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="15dp"
+            android:background="@drawable/ic_update_button_background"
+            android:textColor="#FFF"
+            android:text="@string/update"/>
+
+        <ProgressBar
+            android:id="@+id/progess_bar"
+            style="?android:progressBarStyleHorizontal"
+            android:layout_centerInParent="true"
+            android:layout_width="130dp"
+            android:layout_height="130dp"
+            android:background="@drawable/ic_circle"
+            android:progress="0"
+            android:progressDrawable="@drawable/ic_circular_progress"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+    </RelativeLayout>
+
+</LinearLayout>
+</ScrollView>

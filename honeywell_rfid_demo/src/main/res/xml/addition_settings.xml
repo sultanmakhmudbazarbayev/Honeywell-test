@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+    <ListPreference
+        android:entries="@array/settings_addtion_type_entries"
+        android:entryValues="@array/settings_addtion_type_entryValues"
+        android:key="settings_addtion_type"
+        android:title="@string/settings_addtion_type" />
+</PreferenceScreen>

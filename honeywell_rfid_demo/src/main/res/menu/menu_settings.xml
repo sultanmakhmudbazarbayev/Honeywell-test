@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <group android:checkableBehavior="single">
+        <!--<item-->
+            <!--android:id="@+id/common_settings"-->
+            <!--android:icon="@drawable/reader_inventory_fit"-->
+            <!--android:title="@string/common_settings" />-->
+
+        <!--<item-->
+            <!--android:id="@+id/inventory_params"-->
+            <!--android:icon="@drawable/reader_inventory_fit"-->
+            <!--android:title="@string/settings_inventory_parameters" />-->
+
+        <!--<item-->
+            <!--android:id="@+id/antenna_power"-->
+            <!--android:icon="@drawable/reader_inventory_fit"-->
+            <!--android:title="@string/settings_antenna_power" />-->
+        <!--<item-->
+            <!--android:id="@+id/region_freq"-->
+            <!--android:icon="@drawable/reader_inventory_fit"-->
+            <!--android:title="@string/settings_region_frequency" />-->
+        <!--<item-->
+            <!--android:id="@+id/inventory"-->
+            <!--android:icon="@drawable/reader_inventory_fit"-->
+            <!--android:title="@string/settings_inventory" />-->
+        <!--<item-->
+            <!--android:id="@+id/addtion"-->
+            <!--android:icon="@drawable/reader_inventory_fit"-->
+            <!--android:title="@string/settings_addtion" />-->
+        <!--<item-->
+            <!--android:id="@+id/gen2_option"-->
+            <!--android:icon="@drawable/reader_inventory_fit"-->
+            <!--android:title="@string/settings_Gen2_option" />-->
+        <!--<item-->
+            <!--android:id="@+id/gpio"-->
+            <!--android:icon="@drawable/reader_inventory_fit"-->
+            <!--android:title="@string/settings_GPIO" />-->
+        <!--<item-->
+            <!--android:id="@+id/other_params"-->
+            <!--android:icon="@drawable/reader_inventory_fit"-->
+            <!--android:title="@string/settings_other_parameters" />-->
+        <!--<item-->
+            <!--android:id="@+id/fast_mode_params"-->
+            <!--android:icon="@drawable/reader_inventory_fit"-->
+            <!--android:title="@string/settings_fast_mode_params" />-->
+        <item
+            android:id="@+id/common_settings"
+            android:title="@string/common_settings" />
+
+        <item
+            android:id="@+id/inventory_params"
+            android:visible="false"
+            android:title="@string/settings_inventory_parameters" />
+
+        <item
+            android:id="@+id/antenna_power"
+            android:title="@string/settings_antenna_power" />
+        <item
+            android:id="@+id/region_freq"
+            android:title="@string/settings_region_frequency" />
+        <item
+            android:visible="false"
+            android:id="@+id/fcc_region_freq"
+            android:title="Fcc Region Frequency" />
+        <item
+            android:id="@+id/inventory"
+            android:visible="false"
+            android:title="@string/settings_inventory" />
+        <item
+            android:id="@+id/addtion"
+            android:title="@string/settings_addtion" />
+        <item
+            android:id="@+id/gen2_option"
+            android:title="@string/settings_Gen2_option" />
+        <item
+            android:id="@+id/gpio"
+            android:visible="false"
+            android:title="@string/settings_GPIO" />
+        <item
+            android:id="@+id/other_params"
+            android:visible="false"
+            android:title="@string/settings_other_parameters" />
+        <item
+            android:id="@+id/fast_mode_params"
+            android:title="@string/settings_fast_mode_params" />
+        <item
+            android:id="@+id/general_information"
+            android:title="@string/settings_general_information" />
+    </group>
+</menu>

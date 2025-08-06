@@ -1,0 +1,26 @@
+<resources>
+    <string-array name="function_icons">
+        <item>@drawable/menu_connect</item>
+        <item>@drawable/menu_scan</item>
+        <item>@drawable/menu_edit</item>
+        <item>@drawable/menu_locate</item>
+        <item>@drawable/menu_settings</item>
+        <item>@drawable/menu_about</item>
+    </string-array>
+    <string name="bluetooth_text">Connect</string>
+    <string name="inventory_tag_text">Scan</string>
+    <string name="write_lock_tag_text">Edit Tag</string>
+    <string name="list_tv_text">Device List</string>
+
+
+    <string name="connect_title">Connecting Devices</string>
+
+    <string name="info_once_cnt">Once cnt</string>
+    <string name="info_once_num">Once num</string>
+    <string name="info_once_time">Once time</string>
+    <string name="info_total_cnt">Total cnt</string>
+    <string name="info_total_num">Total num</string>
+    <string name="info_total_time">Total time</string>
+    <string name="info_average_speed">Average speed</string>
+    <string name="info_real_speed">Real speed(pcs/s)</string>
+</resources>

@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".fragment.settings.RegionFreqFragment">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/settings_region_freq_item"
+        android:background="@color/item_bg"
+        android:gravity="center_vertical"
+        android:text="@string/region_area"
+        android:textColor="@color/colorAccent" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <androidx.appcompat.widget.AppCompatSpinner
+            android:id="@+id/spinner_area"
+            style="@style/common_spinner"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:entries="@array/area_arr" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/settings_region_freq_item"
+        android:background="@color/item_bg"
+        android:gravity="center_vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/region_frequency"
+            android:textColor="@color/colorAccent" />
+
+        <CheckBox
+            android:id="@+id/ckb_pick_all"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/ckb_tv_pick_all"
+            android:visibility="gone" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="gone">
+
+        <Button
+            android:id="@+id/btn_view_fre"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/btn_tv_view_fre" />
+
+        <Button
+            android:id="@+id/btn_set_fre"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/btn_tv_set_fre" />
+    </LinearLayout>
+
+    <ListView
+        android:id="@+id/list_fre"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"></ListView>
+
+</LinearLayout>

@@ -1,0 +1,8 @@
+<resources>
+    <string name="bluetooth_text">连接</string>
+    <string name="inventory_tag_text">扫描</string>
+    <string name="write_lock_tag_text">编辑 标签</string>
+    <string name="list_tv_text">设备列表</string>
+
+    <string name="connect_title">连接设备</string>
+</resources>

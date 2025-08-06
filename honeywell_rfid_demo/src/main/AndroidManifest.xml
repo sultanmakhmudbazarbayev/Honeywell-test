@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.honeywell.bccrfid">
+
+    <uses-sdk tools:overrideLibrary="com.onsemi.protocol, com.onsemi.blelibrary" />
+
+    <uses-permission android:name="com.honeywell.decode.permission.DECODE" />
+    <uses-permission android:name="android.permission.BLUETOOTH" />
+    <uses-permission android:name="android.permission.BLUETOOTH_ADMIN" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+
+    <application
+        android:name=".App"
+        android:allowBackup="false"
+        android:icon="@mipmap/ic_ih25"
+        android:label="@string/app_name"
+        android:resizeableActivity="false"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name=".MainActivity"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".ReaderBTControl"
+            android:label="@string/bluetooth_text"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait"></activity>
+        <activity
+            android:name=".ReaderMain"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan"></activity>
+        <activity
+            android:name=".ReaderAbout"
+            android:label="@string/about_text"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait"></activity>
+        <activity
+            android:name=".BarcodeBTActivity"
+            android:label="@string/barcode_way"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.AppCompat.Light.Dialog"></activity>
+        <activity
+            android:name=".test.BeeperTestActivity"
+            android:label="BeeperTest"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait"></activity>
+        <activity
+            android:name=".test.CarrierTestActivity"
+            android:label="CarrierTest"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait"></activity>
+        <activity
+            android:name=".test.RfidFwUpdateActivity"
+            android:label="@string/title_rfid_firmware_update"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait"></activity>
+        <activity
+            android:name=".test.DevOptionActivity"
+            android:label="CarrierTest"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait"></activity>
+        <activity
+            android:name="com.onsemi.fota.PeripheralTableActivity"
+            android:label="@string/title_activity_devices"
+            android:screenOrientation="portrait"></activity>
+        <activity
+            android:name="com.onsemi.fota.BleDeviceActivity"
+            android:label="@string/title_activity_update"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.onsemi.fota.PeripheralTableActivity" />
+        </activity>
+    </application>
+
+</manifest>

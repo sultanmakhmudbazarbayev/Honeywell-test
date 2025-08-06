@@ -1,0 +1,102 @@
+<resources>
+
+    <style name="AppTheme" parent="BaseTheme">
+    </style>
+    <style name="BaseTheme" parent="Theme.MaterialComponents.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="android:switchPreferenceStyle">@style/Custom.SwitchPreferenceStyle</item>
+        <item name="android:switchStyle">@style/Custom.SwitchStyle</item>
+        <item name="android:windowAnimationStyle">@style/Custom.AnimationActivity</item>
+        <item name="materialButtonStyle">@style/Custom.ButtonStyle</item>
+        <item name="borderlessButtonStyle">@style/Custom.BorderlessButtonStyle</item>
+        <item name="preferenceTheme">@style/Custom.PreferenceTheme</item>
+        <item name="android:preferenceStyle">@style/Custom.PreferenceStyle</item>
+    </style>
+
+    <style name="Custom.ButtonStyle" parent="@style/Widget.MaterialComponents.Button">
+        <item name="android:insetLeft">4dp</item>
+        <item name="android:insetRight">4dp</item>
+    </style>
+
+    <style name="Custom.BorderlessButtonStyle" parent="@style/Widget.MaterialComponents.Button.TextButton">
+        <item name="android:insetLeft">4dp</item>
+        <item name="android:insetRight">4dp</item>
+    </style>
+
+    <style name="Custom.PreferenceTheme" parent="@style/PreferenceFragment.Material">
+        <item name="allowDividerAfterLastItem">true</item>
+        <item name="android:divider">@color/divider_color</item>
+        <item name="android:dividerHeight">@dimen/divider_height</item>
+    </style>
+
+    <style name="Custom.PreferenceStyle" parent="@style/Preference.Material">
+        <item name="allowDividerBelow">true</item>
+        <item name="allowDividerAbove">true</item>
+        <item name="iconSpaceReserved">false</item>
+    </style>
+
+    <style name="Custom.SwitchPreferenceStyle" parent="@style/Preference.SwitchPreferenceCompat.Material">
+        <!--这里是为了取消掉android:background = @null 这行-->
+        <item name="android:widgetLayout">@layout/preference_widget_switch</item>
+        <item name="allowDividerBelow">true</item>
+        <item name="allowDividerAbove">true</item>
+        <item name="iconSpaceReserved">false</item>
+    </style>
+
+    <style name="Custom.SwitchStyle" parent="@android:style/Widget.Material.CompoundButton.Switch">
+        <item name="android:track">@null</item>
+        <item name="android:thumb">@null</item>
+        <item name="android:background">@drawable/switch_bg</item>
+    </style>
+
+    <style name="Custom.AnimationActivity" parent="@android:style/Animation.Activity">
+        <item name="android:activityOpenEnterAnimation">@anim/enter_right_to_left</item>
+        <item name="android:activityOpenExitAnimation">@anim/exit_right_to_left</item>
+        <item name="android:activityCloseEnterAnimation">@anim/enter_left_to_right</item>
+        <item name="android:activityCloseExitAnimation">@anim/exit_left_to_right</item>
+    </style>
+
+    <style name="common_spinner">
+        <item name="android:backgroundTint">?attr/colorAccent</item>
+        <item name="android:popupBackground">@color/spinner_bg</item>
+        <item name="android:dropDownVerticalOffset">0dp</item>
+    </style>
+
+
+    <style name="bccrfid_radio_btn_style">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_weight">1.0</item>
+        <item name="android:gravity">center</item>
+        <item name="android:button">@null</item>
+        <item name="android:background">@drawable/radio_btn_bg</item>
+        <item name="android:padding">0dp</item>
+    </style>
+
+    <style name="CustomSubTitleText">
+        <item name="android:textSize">12sp</item>
+    </style>
+
+    <style name="ChipStyle" parent="Widget.MaterialComponents.Chip.Filter">
+        <item name="chipStartPadding">12dp</item>
+        <item name="chipEndPadding">12dp</item>
+        <item name="android:layout_marginEnd">10dp</item>
+    </style>
+
+    <!-- for onsemi ota start -->
+    <style name="DeviceActivity">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+    <style name="DeviceActivity.Cell">
+        <item name="android:paddingEnd">10dp</item>
+    </style>
+    <style name="DeviceActivity.Title">
+        <item name="android:textStyle">bold</item>
+        <item name="android:paddingTop">10dp</item>
+    </style>
+    <!-- for onsemi ota end -->
+</resources>

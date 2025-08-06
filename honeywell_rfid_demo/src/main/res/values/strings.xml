@@ -1,0 +1,422 @@
+<resources>
+    <string name="ok">Ok</string>
+    <string name="cancel">Cancel</string>
+    <string name="dialog_enable_location">To use Bluetooth, you need to enable location service first. Please click OK and enable it manually.</string>
+
+    <string-array name="function_icons">
+        <item>@drawable/reader_bt</item>
+        <item>@drawable/reader_inventory</item>
+        <item>@drawable/reader_writelock</item>
+        <item>@drawable/reader_locate</item>
+        <item>@drawable/reader_setting</item>
+        <item>@drawable/reader_about</item>
+    </string-array>
+    <string-array name="function_texts">
+        <item>@string/bluetooth_text</item>
+        <item>@string/inventory_tag_text</item>
+        <item>@string/write_lock_tag_text</item>
+        <item>@string/locate_tag_text</item>
+        <item>@string/settings_text</item>
+        <item>@string/about_text</item>
+    </string-array>
+    <string-array name="coname_texts">
+        <item>Num</item>
+        <item>EPC ID</item>
+        <item>Cnt</item>
+        <item>Ant</item>
+        <item>Prot</item>
+        <item>RSSI</item>
+        <item>Freq</item>
+        <item>Extra</item>
+        <item>TimeStamp</item>
+    </string-array>
+    <!-- Main -->
+    <string name="bluetooth_text">Bluetooth</string>
+    <string name="inventory_tag_text">Inventory</string>
+    <string name="write_lock_tag_text">Write/Lock Tag</string>
+    <string name="locate_tag_text">Locate Tag</string>
+    <string name="settings_text">Settings</string>
+    <string name="about_text">About</string>
+    <string name="bluetooth_not_connected">Bluetooth is not connected!</string>
+    <string name="dev_not_certified">Device not certified!</string>
+    <string name="toast_back_to_exit">Press again to exit!</string>
+    <string name="request_permission_title">Permissions have been disabled, please manually grant!</string>
+    <string name="request_permission_positive_text">Ok</string>
+    <string name="request_permission_negative_text">Cancel</string>
+    <!--BT control-->
+    <string name="search">Search</string>
+    <string name="searching">Searching</string>
+
+    <string name="access_read_text">Create Reader</string>
+    <string name="bt_text_on">Open</string>
+    <string name="bt_text_off">Close</string>
+    <string name="tv_bluetooth">Bluetooth</string>
+    <string name="list_tv_text">Bluetooth List</string>
+    <string name="btn_search_text">@string/search</string>
+    <string name="finding_ble_service">Finding BLE Services</string>
+    <string name="creating_reader">Creating Reader</string>
+    <string name="toast_create_reader_failed">Failed to Create Reader!</string>
+    <string name="toast_create_reader_successfully">Creat Reader Successfully!</string>
+    <string name="loading_text">Loading...</string>
+    <string name="barcode_way">Barcode Way</string>
+    <string name="barcode_way_intro">Press Scan Button to parse BLE mac address from Barcode.</string>
+    <string name="ble_fota_update">Bluetooth Fota Update</string>
+    <string name="ble_fota_update_try_again">Seems the device did not upgrade Bluetooth firmware successfully before.\n\nWant to upgrade again?\n</string>
+    <string name="rfid_firmware_update">RFID firmware Update</string>
+    <string name="tv_auto_connect">Auto Connect</string>
+    <string name="state_connected">Connected</string>
+    <string name="state_connecting">Connecting</string>
+    <string name="toast_bt_is_closed">Bluetooth is not turned on!</string>
+    <string name="toast_autoconnect_should_close">AutoConnect should be turned off firstly!</string>
+    <string name="tv_rssi">Rssi:</string>
+    <string name="dialog_title_disconnect">Disconnect Bluetooth?</string>
+    <string name="dialog_text_yes">Yes</string>
+    <string name="dialog_text_no">No</string>
+
+
+    <!--BarcodeBTActivity-->
+    <string name="toast_parse_data_fail">Parse Data failed!  Data format in Barcode is irregular!</string>
+    <string name="toast_parse_data_successfully">Parse Data successfully!\nMac Address:</string>
+
+    <!--ReaderInventory-->
+    <string name="start_inventory_tag">Start</string>
+    <string name="stop_inventory_tag">Stop</string>
+    <string name="clear_tag">Clear</string>
+    <string name="inventory_result_info">once_cnt:%1$d\t\t\tonce_num:%2$d\t\t\tonce_time:%3$dms</string>
+    <string name="inventory_fast_result_info">realtime_speed:%1$d pcs/s(Record every 1 secs)</string>
+    <string name="toast_error1">Bluetooth is not connected!</string>
+    <string name="toast_error2">Reader is null!</string>
+    <string name="toast_error3">Current Mode is not RFID mode!</string>
+    <string name="inventory_result_extra_info">total_cnt:%1$d\t\t\ttotal_num:%2$d\t\t\ttotal_time:%3$dms\naverage_speed:%4$d pcs/s</string>
+    <string name="toast_temp_too_high">Battery temperature is too high, can\'t not perform a inventory.</string>
+    <!--Reader read write lock-->
+    <string name="write_tag">Write Tag</string>
+    <string name="lock_tag">Lock Tag</string>
+    <!--write-->
+    <string name="hint_selectd_tag_epc">Selected Tag epc</string>
+    <string name="memory_bank">Memory Bank:</string>
+    <string name="hint_start_address">Start Address</string>
+    <string name="hint_block_count">Block Count</string>
+    <string name="hint_data">Data(Hex only)</string>
+    <string name="btn_tx_read">Read</string>
+    <string name="btn_tx_write">Write</string>
+    <string name="toast_start_addr_null">Start Address is null!</string>
+    <string name="toast_block_cnt_null">Block Count is null!</string>
+    <string name="cmd_executing">CMD Executing</string>
+    <string name="read_failed">Read failed:</string>
+    <string name="write_successfully">Write successfully!</string>
+    <string name="write_failed">Write failed:</string>
+    <string name="data_length_not_adatped">Data length is not adapted!</string>
+    <string name="access_password">Access Password</string>
+    <!--lock-->
+    <string name="lock_successfully">Lock successfully!</string>
+    <string name="lock_failed">Lock failed:</string>
+    <string name="introduction_lock_text">Lock Tag:\nFor Reserved bank:lock read&amp;write\nFor Epc bank:lock write\nFor Tid bank:lock write\nFor User bank:lock write\nNote:Tid bank was%manently locked at the beginning.\nYou should change Access Password(Default is 00000000) before Lock Actions.</string>
+    <string name="kill_successfully">Kill successfully!</string>
+    <string name="kill_failed">Kill failed:</string>
+
+
+    <string-array name="bank_arr">
+        <item>Reserved Bank</item>
+        <item>Epc Bank</item>
+        <item>Tid Bank</item>
+        <item>User Bank</item>
+    </string-array>
+    <string name="introduction_text">Reserved Bank: %1$d blocks\nEpc Bank: usually %2$d blocks\nTid Bank: usually %3$d blocks\nUser Bank: usually %4$d blocks\n1 block = 2 bytes = 4 Hex Chars</string>
+    <!--lock-->
+    <string name="lock_bank">Lock Bank:</string>
+    <string name="lock_type">Lock Type:</string>
+    <string name="btn_tx_lock">Lock</string>
+    <string name="btn_tx_kill">Kill</string>
+    <string-array name="lock_bank_arr">
+        <item>Access Password</item>
+        <item>Kill Password</item>
+        <item>Epc Bank</item>
+        <item>Tid Bank</item>
+        <item>User Bank</item>
+    </string-array>
+    <string-array name="lock_type_arr">
+        <item>Unlock</item>
+        <item>Temporary Lock</item>
+        <item>Permanent Lock</item>
+    </string-array>
+    <!--ReaderLocate-->
+    <string name="ckb_tv_finding_good">Finding good</string>
+    <string name="toast_select_epc">Please select Tag first!</string>
+
+    <!--ReaderSettings-->
+    <string name="common_settings">Common Settings</string>
+    <string name="settings_inventory_parameters">Inventory Parameters</string>
+    <string name="settings_antenna_power">Antenna Power</string>
+    <string name="settings_region_frequency">Region Frequency</string>
+    <string name="settings_Gen2_option">Gen2 Option</string>
+    <string name="settings_inventory">Inventory</string>
+    <string name="settings_addtion">Addition</string>
+    <string name="settings_GPIO">GPIO</string>
+    <string name="settings_other_parameters">Other Parameters</string>
+    <string name="settings_fast_mode_params">Fast Mode Parameters</string>
+    <string name="settings_general_information">Common Attribute</string>
+
+    <!--common settings-->
+    <string name="single_read_duration">Single inventory duration(ms)</string>
+    <string name="single_read_vacancy">Single inventory vacancy(ms)</string>
+    <string name="scan_mode">Scan mode</string>
+
+    <string-array name="scan_mode_entries">
+        <item>Normal mode</item>
+        <item>Fast mode</item>
+    </string-array>
+    <string-array name="scan_mode_entryValues">
+        <item>0</item>
+        <item>1</item>
+    </string-array>
+
+    <string-array name="single_read_duration_entries">
+        <!--<item>50</item>-->
+        <item>200</item>
+        <item>500</item>
+        <item>800</item>
+        <item>1000</item>
+        <item>1500</item>
+        <item>2000</item>
+    </string-array>
+    <string-array name="single_read_duration_entryValues">
+        <!--<item>50</item>-->
+        <item>200</item>
+        <item>500</item>
+        <item>800</item>
+        <item>1000</item>
+        <item>1500</item>
+        <item>2000</item>
+    </string-array>
+
+    <string-array name="single_read_vacancy_entries">
+        <item>0</item>
+        <item>50</item>
+        <item>200</item>
+        <item>500</item>
+        <item>800</item>
+        <item>1000</item>
+        <item>1500</item>
+        <item>2000</item>
+    </string-array>
+    <string-array name="single_read_vacancy_entryValues">
+        <item>0</item>
+        <item>50</item>
+        <item>200</item>
+        <item>500</item>
+        <item>800</item>
+        <item>1000</item>
+        <item>1500</item>
+        <item>2000</item>
+    </string-array>
+    <string name="toast_input_error1">Input only numbers!</string>
+    <string name="toast_input_error2">Value range should between 50 and 2000!</string>
+    <string name="toast_input_error3">Value range should between 0 and 2000!</string>
+    <string name="sound_switch_title">RFID scanning sound(PDA)</string>
+    <string name="sound_switch_summary">On/Off</string>
+    <string name="sound_switch_rfid_title">RFID scanning sound(RFID)</string>
+    <string name="sound_switch_rfid_summary">On/Off</string>
+    <string name="toast_get_temp_failed">Get Temperature failed:</string>
+    <string name="toast_get_temp_successfully">Get Temperature Successfully!</string>
+    <string name="toast_get_module_version_failed">Get Module version failed:</string>
+    <string name="toast_battery_charge_cycle_reminder">Reminder, The battery has been used for a long time, and it is recommended to replace the battery for better performance.</string>
+    <!--RegionFreq-->
+    <string name="region_area">Set Region</string>
+    <string-array name="area_arr">
+        <item>China</item>
+        <item>Europe</item>
+        <item>NA</item>
+        <item>Algeria</item>
+        <item>ANZ</item>
+        <item>Bangladesh</item>
+        <item>Brazil</item>
+        <item>Brunei Darussalam</item>
+        <item>Chile</item>
+        <item>Hong Kong</item>
+        <item>India</item>
+        <item>Indonesia</item>
+        <item>Israel</item>
+        <item>Korea</item>
+        <item>Malaysia</item>
+        <item>Peru</item>
+        <item>Russian</item>
+        <item>Singapore</item>
+        <item>South Africa</item>
+        <item>Taiwan</item>
+        <item>Thailand</item>
+        <item>Venezuela, RB</item>
+        <item>Vietnam</item>
+    </string-array>
+    <string name="region_frequency">Frequency</string>
+    <string name="ckb_tv_pick_all">Pick All/Cancle All</string>
+    <string name="btn_tv_view_fre">View freqs</string>
+    <string name="btn_tv_set_fre">Set freqs</string>
+
+    <string name="toast_get_region_failed"> Get Region failed:</string>
+    <string name="toast_set_region_failed">Set Region failed:</string>
+    <string name="toast_invalid_region_name">Invalid region name!</string>
+    <string name="toast_set_region_successfully">Set Region Successfully!</string>
+    <string name="toast_view_freq_failed">View Frequency failed:</string>
+    <string name="toast_view_freq_successfully">View Frequency Successfully!</string>
+    <string name="toast_set_frequency_failed">Set Frequnecy failed:</string>
+    <string name="toast_set_frequency_successfully"> Set Frequency successfully!</string>
+    <!--ante power settings-->
+    <string name="read_power_ante1_title">Ant read power</string>
+    <string name="write_power_ante1_title">Ant write power</string>
+    <string-array name="power_list">
+        <item>500</item>
+        <item>600</item>
+        <item>700</item>
+        <item>800</item>
+        <item>900</item>
+        <item>1000</item>
+        <item>1100</item>
+        <item>1200</item>
+        <item>1300</item>
+        <item>1400</item>
+        <item>1500</item>
+        <item>1600</item>
+        <item>1700</item>
+        <item>1800</item>
+        <item>1900</item>
+        <item>2000</item>
+        <item>2100</item>
+        <item>2200</item>
+        <item>2300</item>
+        <item>2400</item>
+        <item>2500</item>
+        <item>2600</item>
+        <item>2700</item>
+        <item>2800</item>
+        <item>2900</item>
+        <item>3000</item>
+        <!--<item>3100</item>-->
+        <!--<item>3200</item>-->
+        <!--<item>3300</item>-->
+    </string-array>
+    <string-array name="read_power_ante1_entries"></string-array>
+    <string-array name="read_power_ante1_entryValues"></string-array>
+    <string-array name="write_power_ante1_entries"></string-array>
+    <string-array name="write_power_ante1_entryValues"></string-array>
+    <string name="toast_get_power_successfullly"> Get Ant Power successfully!</string>
+    <string name="toast_get_power_failed"> Get Ant Power failed:</string>
+    <string name="toast_set_power_successfullly"> Set Ant Power successfully!</string>
+    <string name="toast_set_power_failed"> Set Ant Power failed:</string>
+    <!--gen2 option settings -->
+    <string name="session_mode">Session mode</string>
+    <string-array name="session_mode_entries">
+        <item>S0</item>
+        <item>S1</item>
+        <item>S2</item>
+        <item>S3</item>
+    </string-array>
+    <string-array name="session_mode_entryValues">
+        <item>0</item>
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+    </string-array>
+    <string name="toast_get_session_mode_successfully"> Get Session mode successfully!</string>
+    <string name="toast_get_session_mode_failed"> Get Session mode failed:</string>
+    <string name="set_session_mode_successfully"> Set Session mode successfully!</string>
+    <string name="set_session_mode_failed"> Set Session mode failed:</string>
+    <!--fast mode params settings-->
+    <string name="pause_percentage_title">Pause percentage</string>
+    <string-array name="pause_percentage_entries" formatted="false">
+        <item>0%</item>
+        <item>5%</item>
+        <item>10%</item>
+        <item>15%</item>
+        <item>20%</item>
+        <item>25%</item>
+        <item>30%</item>
+        <item>35%</item>
+        <item>40%</item>
+        <item>45%</item>
+        <item>50%</item>
+    </string-array>
+    <string-array name="pause_percentage_entryValues">
+        <item>0</item>
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+        <item>6</item>
+        <item>7</item>
+        <item>8</item>
+        <item>9</item>
+        <item>10</item>
+    </string-array>
+    <string name="return_item_title">Return items</string>
+    <string name="chip_count">count</string>
+    <string name="chip_rssi">rssi</string>
+    <string name="chip_ant">ant</string>
+    <string name="chip_frequency">frequency</string>
+    <string name="chip_time">time</string>
+    <string name="chip_rfu">rfu</string>
+    <string name="chip_pro">pro</string>
+    <string name="chip_data">data</string>
+    <!--general info-->
+    <string name="module_temperature_title">RFID module temperature</string>
+    <string name="module_version_title">RFID module version</string>
+    <string name="firmware_update_title">RFID module firmware update</string>
+    <string name="debug_mode" translatable="false">Debug mode</string>
+    <string name="get_charge_cycle_title">Get battery charge cycle</string>
+    <string name="beeper_test_title">Beeper test</string>
+    <string name="carrier_test_title">Carrier test</string>
+    <string name="rfid_fw_update_title">RFID firmware update</string>
+    <string name="battery_level_title">Battery level</string>
+    <string name="battery_temperature_title">Battery temperature</string>
+    <string name="ble_module_version_title">Bluetooth module version</string>
+    <string name="version_result">Hardware Version:\n%1$s\nSoftware Version:\n%2$s</string>
+    <!--reader about-->
+    <string name="reader_about_info">Software version:%1$s</string>
+
+    <!--addition data-->
+    <string name="settings_addtion_type">Addition data type</string>
+    <string-array name="settings_addtion_type_entries">
+        <item>None</item>
+        <item>Reserved Bank</item>
+        <item>Epc Bank</item>
+        <item>Tid Bank</item>
+        <item>User Bank</item>
+    </string-array>
+    <string-array name="settings_addtion_type_entryValues">
+        <item>None</item>
+        <item>Reserved Bank</item>
+        <item>Epc Bank</item>
+        <item>Tid Bank</item>
+        <item>User Bank</item>
+    </string-array>
+
+    <!-- for onsemi ota start -->
+    <string name="title_activity_devices" translatable="false">Devices</string>
+    <string name="title_activity_update" translatable="false">Update Firmware</string>
+    <string name="title_activity_device" translatable="false">Device</string>
+    <string name="title_update_activity" translatable="false">Update Device</string>
+    <string name="location" translatable="false">LOCATION DISABLED</string>
+    <string name="location_required_text" translatable="false">Please grant location access in order to scan for Bluetooth Low Energy devices.</string>
+    <string name="bluetooth_disabled" translatable="false">BLUETOOTH DISABLED</string>
+    <string name="bluetooth_disabled_text" translatable="false">Android device bluetooth is off. \n\Click the button below to enable it.</string>
+    <string name="bluetooth_button" translatable="false">ENABLE</string>
+    <string name="external_storage" translatable="false">STORAGE PERMISSION REQUEST</string>
+    <string name="external_storage_text" translatable="false">RSL10 FOTA app needs permission to access the external storage to access fota firmware file from the downloads directory.</string>
+    <string name="name" translatable="false">Name</string>
+    <string name="address" translatable="false">Address</string>
+    <string name="state" translatable="false">State</string>
+    <string name="bootloader" translatable="false">Bootloader</string>
+    <string name="fota" translatable="false">Fota</string>
+    <string name="app" translatable="false">App</string>
+    <string name="connect" translatable="false">Connect</string>
+    <string name="file" translatable="false">File</string>
+    <string name="select_file" translatable="false">Select File</string>
+    <string name="update" translatable="false">Update</string>
+    <string name="updating" translatable="false">Updating</string>
+    <string name="toast_illegal">Invalid Fota file</string>
+    <!-- for onsemi ota end -->
+
+    <string name="failed_to_load_file">Failed to load file!</string>
+    <string name="title_rfid_firmware_update" translatable="false">RFID Firmware Update</string>
+</resources>

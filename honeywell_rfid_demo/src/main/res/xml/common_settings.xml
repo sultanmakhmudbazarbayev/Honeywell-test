@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+    <ListPreference
+        android:entries="@array/single_read_duration_entries"
+        android:entryValues="@array/single_read_duration_entryValues"
+        android:key="single_read_duration"
+        android:title="@string/single_read_duration" />
+    <ListPreference
+        android:entries="@array/single_read_vacancy_entries"
+        android:entryValues="@array/single_read_vacancy_entryValues"
+        android:key="single_read_vacancy"
+        android:title="@string/single_read_vacancy" />
+    <ListPreference
+        android:entries="@array/scan_mode_entries"
+        android:entryValues="@array/scan_mode_entryValues"
+        android:key="scan_mode"
+        android:title="@string/scan_mode" />
+    <com.honeywell.bccrfid.views.MySwitchPreference
+        android:defaultValue="true"
+        android:key="sound_switch_pda"
+        android:summary="@string/sound_switch_summary"
+        android:title="@string/sound_switch_title" />
+    <com.honeywell.bccrfid.views.MySwitchPreference
+        android:defaultValue="true"
+        android:key="sound_switch_rfid"
+        android:summary="@string/sound_switch_rfid_summary"
+        android:title="@string/sound_switch_rfid_title" />
+</PreferenceScreen>

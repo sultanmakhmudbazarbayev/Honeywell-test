@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+    <ListPreference
+        android:key="session_mode"
+        android:title="@string/session_mode"
+        android:entries="@array/session_mode_entries"
+        android:entryValues="@array/session_mode_entryValues"
+        />
+</PreferenceScreen>

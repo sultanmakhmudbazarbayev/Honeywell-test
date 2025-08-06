@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ListView
+        android:id="@+id/listview_devices"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="visible"
+        android:layout_weight="1"
+        android:choiceMode="none"
+        android:listSelector="@android:color/transparent">
+    </ListView>
+    <RelativeLayout
+        android:id="@+id/layout_bluetooth_info"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone"
+
+        android:layout_weight="1">
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_above="@+id/layout_bluetooth_title"
+            android:padding="16dp"
+            android:src="@drawable/ic_bluetooth_disabled"/>
+
+        <TextView
+            android:id="@+id/layout_bluetooth_title"
+            android:paddingTop="10dp"
+            android:textStyle="bold"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_above="@+id/layout_bluetooth_disabled_text"
+            android:gravity="center_horizontal"
+            android:text="@string/bluetooth_disabled"/>
+
+        <TextView
+            android:id="@+id/layout_bluetooth_disabled_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_centerInParent="true"
+            android:gravity="center_horizontal"
+            android:text="@string/bluetooth_disabled_text"/>
+
+        <Button
+            android:id="@+id/button_enable_bluetooth"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/layout_bluetooth_disabled_text"
+            android:layout_centerInParent="true"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/ic_bluetooth_button_background"
+            android:text="@string/bluetooth_button"
+            android:textColor="#fff" />
+
+    </RelativeLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".fragment.ReaderInventoryFragment">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:color/white">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar"
+            style="@style/HoneyToolbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_scrollFlags="scroll|enterAlways" />
+
+        <include layout="@layout/fragment_reader_inventory_info" />
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <com.honeywell.bccrfid.views.MyHorizontalScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true"
+        android:overScrollMode="never"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:descendantFocusability="blocksDescendants">
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/recycler_view"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"></androidx.recyclerview.widget.RecyclerView>
+
+            <RelativeLayout
+                android:id="@+id/frame_anim_viewgroup"
+                android:layout_width="100dp"
+                android:layout_height="match_parent"
+                android:visibility="gone">
+
+                <LinearLayout
+                    android:id="@+id/frame_anim_parent"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/tv_rssi"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_above="@+id/iv_finding_good_anim"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_marginTop="40dp"
+                        android:textColor="@android:color/black"
+                        android:textSize="22dp"
+                        android:textStyle="bold" />
+
+                    <ProgressBar
+                        android:id="@+id/finding_good_progressbar"
+                        style="?android:attr/progressBarStyleHorizontal"
+                        android:layout_width="45dp"
+                        android:layout_height="190dp"
+                        android:layout_gravity="center_horizontal"
+                        android:max="100"
+                        android:progress="50"
+                        android:progressDrawable="@drawable/progress_bar_drawable" />
+                </LinearLayout>
+
+            </RelativeLayout>
+
+        </RelativeLayout>
+    </com.honeywell.bccrfid.views.MyHorizontalScrollView>
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

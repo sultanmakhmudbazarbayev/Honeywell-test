@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/barcode_way"
+        android:title="@string/barcode_way"/>
+    <item
+        android:id="@+id/ble_fota_update"
+        android:title="@string/ble_fota_update"/>
+    <item
+        android:id="@+id/rfid_firmware_update"
+        android:title="@string/rfid_firmware_update"/>
+</menu>

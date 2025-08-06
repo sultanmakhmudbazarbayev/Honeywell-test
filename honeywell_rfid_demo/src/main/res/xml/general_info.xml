@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+    <Preference
+        android:key="module_temperature"
+        android:title="@string/module_temperature_title" />
+    <Preference
+        android:key="module_version"
+        android:title="@string/module_version_title" />
+    <Preference
+        android:key="firmware_update"
+        android:title="@string/firmware_update_title" />
+    <Preference
+        android:key="beeper_test"
+        android:title="@string/beeper_test_title" />
+    <Preference
+        android:key="carrier_test"
+        android:title="@string/carrier_test_title" />
+    <Preference
+        android:key="battery_level"
+        android:title="@string/battery_level_title" />
+    <Preference
+        android:key="battery_temperature"
+        android:title="@string/battery_temperature_title" />
+    <Preference
+        android:key="ble_module_version"
+        android:title="@string/ble_module_version_title" />
+</PreferenceScreen>

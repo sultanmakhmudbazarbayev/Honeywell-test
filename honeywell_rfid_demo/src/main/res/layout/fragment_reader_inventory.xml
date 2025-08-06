@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".fragment.ReaderInventoryFragment">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_scrollFlags="scroll|enterAlways">
+
+            <androidx.appcompat.widget.Toolbar
+                android:id="@+id/toolbar"
+                android:layout_width="match_parent"
+                android:layout_height="?attr/actionBarSize"
+                android:background="?attr/colorPrimary"
+                android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+                app:subtitleTextColor="#ffff0f"
+                app:subtitleTextAppearance="@style/CustomSubTitleText"
+                app:layout_scrollFlags="scroll"
+                app:popupTheme="@style/ThemeOverlay.AppCompat.Light" />
+
+            <TextView
+                android:id="@+id/tv_extra_info"
+                android:textSize="12sp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:maxLines="2"
+                android:paddingLeft="16dp"
+                android:textColor="#ffff0f"
+                android:visibility="gone" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/begin_read"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:text="@string/start_inventory_tag" />
+
+                <Button
+                    android:id="@+id/stop_read"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:text="@string/stop_inventory_tag" />
+
+                <Button
+                    android:id="@+id/clear_data"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:text="@string/clear_tag" />
+            </LinearLayout>
+        </LinearLayout>
+
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+
+    <!--</android.support.design.widget.AppBarLayout>-->
+
+    <!--<TextView-->
+    <!--android:id="@+id/tag_count"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:text="111111" />-->
+
+    <!--<TextView-->
+    <!--android:id="@+id/device_state"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:text="111111" />-->
+
+
+    <com.honeywell.bccrfid.views.MyHorizontalScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true"
+        android:overScrollMode="never"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:descendantFocusability="blocksDescendants">
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/recycler_view"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"></androidx.recyclerview.widget.RecyclerView>
+            <RelativeLayout
+                android:id="@+id/frame_anim_viewgroup"
+                android:layout_width="100dp"
+                android:layout_height="match_parent"
+                android:visibility="gone">
+                <LinearLayout
+                    android:id="@+id/frame_anim_parent"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:orientation="vertical">
+                    <TextView
+                        android:id="@+id/tv_rssi"
+                        android:layout_above="@+id/iv_finding_good_anim"
+                        android:textColor="@android:color/black"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+                    <ImageView
+                        android:id="@+id/iv_finding_good_anim"
+                        android:src="@drawable/frame_anim"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp" />
+                </LinearLayout>
+
+            </RelativeLayout>
+
+        </RelativeLayout>
+    </com.honeywell.bccrfid.views.MyHorizontalScrollView>
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

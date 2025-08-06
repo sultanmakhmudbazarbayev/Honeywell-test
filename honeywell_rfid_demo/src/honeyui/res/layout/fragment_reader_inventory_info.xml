@@ -1,0 +1,210 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="168dp"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:paddingLeft="@dimen/common_padding_large"
+            android:paddingRight="@dimen/common_padding_large">
+
+            <TextView
+                android:id="@+id/once_cnt_title"
+                style="@style/scan_info_style1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/info_once_cnt" />
+
+            <TextView
+                android:id="@+id/once_cnt_result"
+                style="@style/scan_info_style2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/once_cnt_title"
+                android:text="0" />
+
+            <TextView
+                android:id="@+id/once_num_title"
+                style="@style/scan_info_style3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/once_cnt_result"
+                android:layout_marginTop="10dp"
+                android:text="@string/info_once_num" />
+
+            <TextView
+                android:id="@+id/once_num_result"
+                style="@style/scan_info_style3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/once_cnt_result"
+                android:layout_alignParentEnd="true"
+                android:layout_marginTop="10dp"
+                android:text="0" />
+
+            <TextView
+                android:id="@+id/once_time_title"
+                style="@style/scan_info_style3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/once_num_title"
+                android:layout_marginTop="4dp"
+                android:text="@string/info_once_time" />
+
+            <TextView
+                android:id="@+id/once_time_result"
+                style="@style/scan_info_style3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/once_num_title"
+                android:layout_alignParentEnd="true"
+                android:layout_marginTop="4dp"
+                android:text="0ms" />
+
+        </RelativeLayout>
+
+        <View
+            android:layout_width="1dp"
+            android:layout_height="110dp"
+            android:layout_marginTop="2dp"
+            android:layout_marginBottom="2dp"
+            android:background="#801B1B1B" />
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:paddingLeft="@dimen/common_padding_large"
+            android:paddingRight="@dimen/common_padding_large">
+
+            <TextView
+                android:id="@+id/total_cnt_title"
+                style="@style/scan_info_style1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/info_total_cnt" />
+
+            <TextView
+                android:id="@+id/total_cnt_result"
+                style="@style/scan_info_style2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/total_cnt_title"
+                android:text="0" />
+
+            <TextView
+                android:id="@+id/total_num_title"
+                style="@style/scan_info_style3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/total_cnt_result"
+                android:layout_marginTop="10dp"
+                android:text="@string/info_total_num" />
+
+            <TextView
+                android:id="@+id/total_num_result"
+                style="@style/scan_info_style3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/total_cnt_result"
+                android:layout_alignParentEnd="true"
+                android:layout_marginTop="10dp"
+                android:text="0" />
+
+            <TextView
+                android:id="@+id/total_time_title"
+                style="@style/scan_info_style3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/total_num_title"
+                android:layout_marginTop="4dp"
+                android:text="@string/info_total_time" />
+
+            <TextView
+                android:id="@+id/total_time_result"
+                style="@style/scan_info_style3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/total_num_title"
+                android:layout_alignParentEnd="true"
+                android:layout_marginTop="4dp"
+                android:text="0ms" />
+        </RelativeLayout>
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:paddingStart="@dimen/common_padding_large"
+            android:paddingEnd="@dimen/common_padding_large">
+
+            <TextView
+                android:id="@+id/average_speed_title"
+                style="@style/scan_info_style3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:text="@string/info_average_speed" />
+
+            <TextView
+                android:id="@+id/average_speed_result"
+                style="@style/scan_info_style3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_centerVertical="true"
+                android:text="0pcs/s" />
+        </RelativeLayout>
+
+        <View
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:background="@android:color/transparent" />
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:paddingEnd="16dp">
+
+            <Button
+                android:id="@+id/begin_read_single"
+                android:layout_width="110dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_centerVertical="true"
+                android:gravity="center"
+                android:text="@string/start_inventory_tag"
+                android:textSize="14sp" />
+            <Button
+                android:id="@+id/stop_read_single"
+                style="@style/HoneyOutlinedButtonStyle"
+                android:visibility="gone"
+                android:layout_width="110dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_centerVertical="true"
+                android:gravity="center"
+                android:text="@string/stop_inventory_tag"
+                android:textSize="14sp" />
+
+        </RelativeLayout>
+    </LinearLayout>
+</LinearLayout>
+
